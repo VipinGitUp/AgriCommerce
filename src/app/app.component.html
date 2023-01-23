@@ -1,24 +1,40 @@
+
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="ISO-8859-1">
   <title>AgriCommerce</title>
-  <link href="./app.component.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-  <p>
-    <mat-toolbar>
-      <span>AgriCommerce</span>
-    </mat-toolbar>
-  </p>
-  
-  <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
-    <mat-tab label="First">Content 1</mat-tab>
-    <mat-tab label="Second">Content 2</mat-tab>
-    <mat-tab label="Third">Content 3</mat-tab>
-  </mat-tab-group>
-  
+  <div id="templatemo_header">
+
+    <div id="site_title">
+      <h1>
+
+        <a><img src="../logo4.png" alt="logo" width="190" height="90"></a> <a rel="nofollow">
+          <strong id="heading">AgriCommerce</strong><span> Buy Fresh
+            Vegetables and Fruits</span></a>
+      </h1>
+    </div>
+    <div class="cleaner"></div>
+  </div>
+
+  <div id="templatemo_menu">
+    <span></span>
+    <a [routerLink]="['/home']" routerLinkActive="active">Home</a>
+    <a [routerLink]="['/about']" routerLinkActive="active">About</a>
+    <a [routerLink]="['/contact']" routerLinkActive="active">Contact</a>
+    <a [routerLink]="['/registration']" routerLinkActive="active">Registration</a>
+    <a [routerLink]="['/login']" routerLinkActive="active">Login</a>
+  </div>
+  <div>
+   </div>
+
+  <!-- End NavBar Section -->
 
 </body>
 
 </html>
+  <router-outlet></router-outlet>
