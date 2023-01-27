@@ -4,7 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+ 
+//   exports: [RouterModule]
+imports: [BrowserModule, RouterModule.forRoot(routes)],
+declarations: [AppComponent, HomeComponent],
+bootstrap: [AppComponent],
+
 })
 export class AppRoutingModule { }

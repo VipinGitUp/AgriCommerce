@@ -1,0 +1,193 @@
+<div fxLayoutAlign="center center" fxFlexFill>
+    <mat-card fxFlex="25">
+        <mat-toolbar color="primary">Registration Page</mat-toolbar>
+
+<form [formGroup]="myForm" class="example-form" fxLayoutAlign="stretch" fxLayout="column" >
+    
+    <mat-form-field class="example-full-width">
+      <mat-label>First Name</mat-label>
+      <input type="text" [(ngModel)]="newUser.firstname" name="firstname" matInput formControlName="firstname">
+      <mat-error *ngIf="myError('firstname', 'required')">Name is required</mat-error>
+      <mat-error *ngIf="myError('firstname', 'maxlength')">Limit exceed</mat-error>
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+        <mat-label>Last Name</mat-label>
+      <input type="text" [(ngModel)]="newUser.lastname" name="lastname" matInput>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Contact No. </mat-label>
+      <input type="text" [(ngModel)]="newUser.contactno" name="contactno" matInput>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Email ID</mat-label>
+      <input type="text" [(ngModel)]="newUser.email" name="email" matInput>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+      <input type="text" [(ngModel)]="newUser.firstname" name="firstname" matInput>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Address</mat-label>
+      <input type="text" [(ngModel)]="newUser.password" name="password" matInput>
+      </mat-form-field>
+      
+      
+      <mat-form-field appearance="fill" >
+        <mat-label>Type</mat-label>
+        <mat-select [(ngModel)]="newUser.type">
+          <mat-option value="farmer" >Farmer</mat-option>
+          <mat-option value="customer" >Customer</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+   
+ <mat-form-field appearance="fill">
+        <mat-label>Address</mat-label>
+        <input type="text" [(ngModel)]="newUser.address" name="address" matInput>
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="addUser()">submit</button>
+  </form>
+   
+    </mat-card>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script language="javascript"></script>
+
+
+<div id="templatemo_content_wrapper">
+    <div id="content">
+        <div id="registrationcard">
+            <form action="registrationverify.jsp" method="post">
+                <div class="formtabel">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>First Name</td>
+                            <td>
+                                <input type="text" name="firstname" size="50" required placeholder="Enter First Name" />
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>Last Name </td>
+                            <td>
+                                <input type="text" name="lastname" size="50" required placeholder="enter last name" />
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>Contact No.</td>
+                            <td>
+                                <input type="number" name="contactno" size="50" required
+                                    placeholder="Enter ContactNo" />
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>Email ID </td>
+                            <td>
+                                <input type="email" name="emailid" size="50" id="emailid" required
+                                    placeholder="enter valid email address" />
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>Password </td>
+                            <td>
+                                <input required type="password" name="password" size="50"
+                                    placeholder="enter your password" />
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>Type </td>
+                            <td>
+                                <select name="userType" required>
+                                    <option>select</option>
+                                    <option values="farmer">farmer</option>
+                                    <option values="customer">customer</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>
+                                <input type="text" name="address" size="50" required placeholder="Enter address" />
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input class="buttonstyled" type="submit" value="Sign Up" />
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div> -->

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import {routes} from './app.module';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+
+   menuItems: any[] = [];
+
+  constructor() { }
+
+  ngOnInit() {
+    this.menuItems = routes;//.filter(menuItem => menuItem);
+  }
+ 
 }
